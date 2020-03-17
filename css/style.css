@@ -1,0 +1,94 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #000000;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.0em;
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+}
+
+/*
+Colors used:
+Primary Color (Navy): #305372;
+Secondary Color (Sea): #B0DDE4;
+Primary Highlight Color (Tomato): #DF4C73;
+Secondary Highlight Color (Sky): #E2F0F9;
+*/
+a {
+  color: #305372;
+  text-decoration: none;
+  /* No underlining */
+}
+
+a:visited {
+  /* visited link */
+  color: #305372;
+}
+
+a:hover,
+a:focus {
+  color: #DF4C73;
+}
+
+a:active {
+  /* selected link */
+  color: #994c30;
+}
+
+.button {
+  display: inline-block;
+  background-color: #305372;
+  color: #ffffff !important;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 12px;
+  border: 2px solid #305372;
+  border-radius: 24px;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #305372 !important;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #DF4C73 !important;
+  text-transform: uppercase;
+  border: 2px solid #DF4C73;
+}
+
+.button.contact:hover {
+  background-color: #DF4C73;
+  color: #ffffff !important;
+}

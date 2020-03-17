@@ -6,6 +6,10 @@
   <script src="https://kit.fontawesome.com/f6954c1a79.js" crossorigin="anonymous"></script>
   <meta charset="utf-8" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DeAnn Mann UX Designer</title>
 </head>
 
@@ -22,6 +26,7 @@
       </nav>
     </div>
   </header>
+
   <main>
     <div>
       <div>
@@ -30,7 +35,7 @@
           <img src="img/fluent/Fluent_welcome@1200px.jpg" alt="My Image">
         </picture>
         <h1>OVERVIEW</h1>
-        <h2>Welcome to our journey creating a language vocabulary learning app</h2>
+        <h3>Welcome to our journey creating a language vocabulary learning app!</h3>
         <p>A User Experience student exercise.</p>
       </div>
     </div>
@@ -74,7 +79,7 @@
           <source srcset="img/fluent/Fluent_App3_PosNeg@0.5x.jpg" media="max-width: 767px">
           <img src="img/fluent/Fluent_App3_PosNeg@1200px.jpg" alt="My Image">
         </picture>
-        <a href="https://drive.google.com/open?id=1rNh0lYsYEpKp13JBBfGjtvh6Ww69Gu7q" target="_blank">View Entire Evaluation</a><!-- button or link label -->
+        <a href="https://drive.google.com/open?id=1rNh0lYsYEpKp13JBBfGjtvh6Ww69Gu7q" class="button" target="_blank">View Entire Evaluation</a><!-- button or link label -->
 
         <h3>Online Survey</h3>
         <p>Then I conducted an online survey to find out how people liked to learn new languages, what challenges they faced and what motivated them to continue learning.</p>
@@ -85,141 +90,142 @@
           4. What makes learning new vocabulary challenging? How can it be made easier?
           5. Do you prefer studying by yourself or with others? Do you reach out to others for support? If so, who/what are those sources?
           6. What distracts or annoys you when using a learning app? How can it be improved?</p>
-          <a href="https://drive.google.com/open?id=1GH4XRH9ZHihzERJVpALaU_npLicJ-qms" target="_blank">View Survey Results</a><!-- button or link label -->
+        <a href="https://drive.google.com/open?id=1GH4XRH9ZHihzERJVpALaU_npLicJ-qms" class="button" target="_blank">View Survey Results</a><!-- button or link label -->
 
-          <h3>User Persona</h3>
-          <p>Based on survey responses, I created a persona to see through the user’s eyes while building the app.</p>
-          <h4>Let's Meet Janar</h4>
-          <p>He’s a college student in his 20’s. He recently moved to France and his is not fluent in French. He needs to expand his French vocabulary. His goal is to carry on a conversation in French and fit in sounding like a native speaker.</p>
-          <picture>
-            <source srcset="img/fluent/Fluent_Janar_persona@0.5x.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_Janar_persona@1200px.jpg" alt="My Image">
-          </picture>
-          <p>Janar needs a way to expand his vocabulary in a foreign language because he is new to the country and cannot communicate effectively or credibly with the people in their native tongue.</p><!-- overlay copy on "Fluent Problem" background image -->
-          <picture>
-            <source srcset="img/fluent/Fluent_Problem_bkgrd@0.5x.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_Problem_bkgrd@1200px.jpg" alt="My Image">
-          </picture>
-          <picture>
-            <source srcset="img/fluent/Fluent_Janar_issues@0.5x.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_Janar_issues@1200px.jpg" alt="My Image">
-          </picture>
+        <h3>User Persona</h3>
+        <p>Based on survey responses, I created a persona to see through the user’s eyes while building the app.</p>
+        <h4>Let's Meet Janar</h4>
+        <p>He’s a college student in his 20’s. He recently moved to France and his is not fluent in French. He needs to expand his French vocabulary. His goal is to carry on a conversation in French and fit in sounding like a native speaker.</p>
+        <picture>
+          <source srcset="img/fluent/Fluent_Janar_persona@0.5x.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_Janar_persona@1200px.jpg" alt="My Image">
+        </picture>
+        <p>Janar needs a way to expand his vocabulary in a foreign language because he is new to the country and cannot communicate effectively or credibly with the people in their native tongue.</p>
+        <!-- overlay copy on "Fluent Problem" background image -->
+        <picture>
+          <source srcset="img/fluent/Fluent_Problem_bkgrd@0.5x.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_Problem_bkgrd@1200px.jpg" alt="My Image">
+        </picture>
+        <picture>
+          <source srcset="img/fluent/Fluent_Janar_issues@0.5x.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_Janar_issues@1200px.jpg" alt="My Image">
+        </picture>
 
-          <h3>Problem Statement</h3>
-          <p>Newcomers to a country need to expand their vocabulary in a foreign language because they cannot communicate effectively or credibly with the people in their native tongue.</p>
+        <h3>Problem Statement</h3>
+        <p>Newcomers to a country need to expand their vocabulary in a foreign language because they cannot communicate effectively or credibly with the people in their native tongue.</p>
 
-          <h3>Hypothesis Statement</h3>
-          <p>We believe by creating an app that incorporates repetitive games with audio spoken by natives, we offer the highest rate of success to achieve our user’s goal of expanding his or her vocabulary in a foreign language and communicating
-            credibly and effectively with the local people. We know this will be true when users converse seamlessly with native speakers in our app’s community and write favorable reviews on the Google Play and App Stores.</p>
+        <h3>Hypothesis Statement</h3>
+        <p>We believe by creating an app that incorporates repetitive games with audio spoken by natives, we offer the highest rate of success to achieve our user’s goal of expanding his or her vocabulary in a foreign language and communicating
+          credibly and effectively with the local people. We know this will be true when users converse seamlessly with native speakers in our app’s community and write favorable reviews on the Google Play and App Stores.</p>
 
-          <h2>Ideate Solutions</h2>
-          <h3>Task Flows</h3>
-          <p>I created task flows Janar would take to illustrate pathways he would follow to accomplish his goals. They also served as an exercise to discover any problems that needed to be addressed and resolved.</p>
-          <picture>
-            <source srcset="img/fluent/Fluent_HowTo_Flow1@0.5x.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_HowTo_Flow1@1200px.jpg" alt="My Image">
-          </picture>
-          <picture>
-            <source srcset="img/fluent/Fluent_HowTo_Flow2@0.5x.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_HowTo_Flow2@1200px.jpg" alt="My Image">
-          </picture>
+        <h2>Ideate Solutions</h2>
+        <h3>Task Flows</h3>
+        <p>I created task flows Janar would take to illustrate pathways he would follow to accomplish his goals. They also served as an exercise to discover any problems that needed to be addressed and resolved.</p>
+        <picture>
+          <source srcset="img/fluent/Fluent_HowTo_Flow1@0.5x.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_HowTo_Flow1@1200px.jpg" alt="My Image">
+        </picture>
+        <picture>
+          <source srcset="img/fluent/Fluent_HowTo_Flow2@0.5x.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_HowTo_Flow2@1200px.jpg" alt="My Image">
+        </picture>
 
-          <h2>Develop a Prototype</h2>
-          <h3>Sketching</h3>
-          <p>I sketched out series of screens to see how the app would work overall.</p>
-          <picture>
-            <source srcset="img/fluent/Fluent_sketches@0.5x.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_sketches@1200px.jpg" alt="My Image">
-          </picture>
+        <h2>Develop a Prototype</h2>
+        <h3>Sketching</h3>
+        <p>I sketched out series of screens to see how the app would work overall.</p>
+        <picture>
+          <source srcset="img/fluent/Fluent_sketches@0.5x.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_sketches@1200px.jpg" alt="My Image">
+        </picture>
 
-          <h3>Low Fidelity Wireframes</h3>
-          <p>I drew paper wireframes to visualize how the screens would look and interact with one another. Using these frames, I created a simple Prott prototype for testing.</p>
-          <picture>
-            <source srcset="img/fluent/Fluent_Wireframes_Onboarding@0.5x.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_Wireframes_Onboarding@1200px.jpg" alt="My Image">
-          </picture>
-          <picture>
-            <source srcset="img/fluent/Fluent_Wireframes_Quiz@0.5x.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_Wireframes_Quiz@1200px.jpg" alt="My Image">
-          </picture>
+        <h3>Low Fidelity Wireframes</h3>
+        <p>I drew paper wireframes to visualize how the screens would look and interact with one another. Using these frames, I created a simple Prott prototype for testing.</p>
+        <picture>
+          <source srcset="img/fluent/Fluent_Wireframes_Onboarding@0.5x.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_Wireframes_Onboarding@1200px.jpg" alt="My Image">
+        </picture>
+        <picture>
+          <source srcset="img/fluent/Fluent_Wireframes_Quiz@0.5x.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_Wireframes_Quiz@1200px.jpg" alt="My Image">
+        </picture>
 
-          <h2>Test and Refine</h2>
-          <h3>Usability Testing</h3>
-          <p>I then conducted five in-person usability tests to see what worked and what improvements were needed before putting it through development.</p>
-          <picture>
-            <source srcset="img/fluent/Fluent_Test_Plan1@0.5x.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_Test_Plan1@1200px.jpg" alt="My Image">
-          </picture>
-          <picture>
-            <source srcset="img/fluent/Fluent_Test_Plan2@0.5x.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_Test_Plan2@1200px.jpg" alt="My Image">
-          </picture>
+        <h2>Test and Refine</h2>
+        <h3>Usability Testing</h3>
+        <p>I then conducted five in-person usability tests to see what worked and what improvements were needed before putting it through development.</p>
+        <picture>
+          <source srcset="img/fluent/Fluent_Test_Plan1@0.5x.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_Test_Plan1@1200px.jpg" alt="My Image">
+        </picture>
+        <picture>
+          <source srcset="img/fluent/Fluent_Test_Plan2@0.5x.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_Test_Plan2@1200px.jpg" alt="My Image">
+        </picture>
 
-          <h4>What was Tested</h4>
+        <h4>What was Tested</h4>
 
-          <p>1. Opening the app for the first time
-            • to find out what the user will do instinctively
-            • see what the user’s first impression is and how he/she feels about the app
-            • determine if it is intuitive and/or easy to navigate
+        <p>1. Opening the app for the first time
+          • to find out what the user will do instinctively
+          • see what the user’s first impression is and how he/she feels about the app
+          • determine if it is intuitive and/or easy to navigate
 
-            2. Taking a vocabulary lesson
-            • observe where the user initially goes to take a lesson
-            • see how well the user answers/navigates through the lesson
+          2. Taking a vocabulary lesson
+          • observe where the user initially goes to take a lesson
+          • see how well the user answers/navigates through the lesson
 
-            3. Taking a quiz
-            • observe where the user initially goes to take a quiz
-            • see how well the user answers/navigates through the questions
+          3. Taking a quiz
+          • observe where the user initially goes to take a quiz
+          • see how well the user answers/navigates through the questions
 
-            4. Adding a vocabulary word to the library
-            • receive feedback on the various ways to save a new word
+          4. Adding a vocabulary word to the library
+          • receive feedback on the various ways to save a new word
 
-            5. Talking to the virtual tutor
-            • receive feedback on how the user interacts with the virtual tutor</p>
+          5. Talking to the virtual tutor
+          • receive feedback on how the user interacts with the virtual tutor</p>
 
-          <picture>
-            <source srcset="img/fluent/Fluent_Test_Report@0.5x.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_Test_Report@1200px.jpg" alt="My Image">
-          </picture>
+        <picture>
+          <source srcset="img/fluent/Fluent_Test_Report@0.5x.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_Test_Report@1200px.jpg" alt="My Image">
+        </picture>
 
-          <h4>What didn't work</h4>
-          <picture>
-            <source srcset="img/fluent/Fluent_DidntWork@0.5x.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_DidntWork@1200px.jpg" alt="My Image">
-          </picture>
+        <h4>What didn't work</h4>
+        <picture>
+          <source srcset="img/fluent/Fluent_DidntWork@0.5x.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_DidntWork@1200px.jpg" alt="My Image">
+        </picture>
 
-          <h4>What was revised</h4>
-          <picture>
-            <source srcset="img/fluent/Fluent_Fixed@0.5x.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_Fixed@1200px.jpg" alt="My Image">
-          </picture>
+        <h4>What was revised</h4>
+        <picture>
+          <source srcset="img/fluent/Fluent_Fixed@0.5x.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_Fixed@1200px.jpg" alt="My Image">
+        </picture>
 
-          <h4>What's next?</h4>
+        <h3>What's next?</h3>
 
-          <p>Janar wants to converse seamlessly in French and sound like a local. We believe that connecting Janar with native speakers, he can test his listening, comprehension and pronunciation skills. Those French speakers can act as tutors by
-            sending him feedback and answer questions that come up in real conversation.
-            We introduced the “Community” during the OnBoarding process and it currently appears along the bottom navigation. We need to determine how to incorporate this feature within the app. Should it have a larger presence on the Home Screen? Is
-            it a part of the “Conversation” section as an option to send to a native speaker? Is the tutor the native speaker? Do you opt in as a native speaker for your own language in order to participate? How do you converse with the Community?
-            The exploration continues...</p>
+        <p>Janar wants to converse seamlessly in French and sound like a local. We believe that connecting Janar with native speakers, he can test his listening, comprehension and pronunciation skills. Those French speakers can act as tutors by
+          sending him feedback and answer questions that come up in real conversation.
+          We introduced the “Community” during the OnBoarding process and it currently appears along the bottom navigation. We need to determine how to incorporate this feature within the app. Should it have a larger presence on the Home Screen? Is
+          it a part of the “Conversation” section as an option to send to a native speaker? Is the tutor the native speaker? Do you opt in as a native speaker for your own language in order to participate? How do you converse with the Community?
+          The exploration continues...</p>
 
-          <h3>Course Project Learnings</h3>
-          <picture>
-            <source srcset="img/fluent/Fluent_LEARNINGS2.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_LEARNINGS2.jpg" alt="My Image">
-          </picture>
-          <picture>
-            <source srcset="img/fluent/Fluent_LEARNINGS3.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_LEARNINGS3.jpg" alt="My Image">
-          </picture>
-          <picture>
-            <source srcset="img/fluent/Fluent_LEARNINGS1.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_LEARNINGS1.jpg" alt="My Image">
-          </picture>
-          <picture>
-            <source srcset="img/fluent/Fluent_LEARNINGS4.jpg" media="max-width: 767px">
-            <img src="img/fluent/Fluent_LEARNINGS4.jpg" alt="My Image">
-          </picture>
+        <h3>Course Project Learnings</h3>
+        <picture>
+          <source srcset="img/fluent/Fluent_LEARNINGS2.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_LEARNINGS2.jpg" alt="My Image">
+        </picture>
+        <picture>
+          <source srcset="img/fluent/Fluent_LEARNINGS3.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_LEARNINGS3.jpg" alt="My Image">
+        </picture>
+        <picture>
+          <source srcset="img/fluent/Fluent_LEARNINGS1.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_LEARNINGS1.jpg" alt="My Image">
+        </picture>
+        <picture>
+          <source srcset="img/fluent/Fluent_LEARNINGS4.jpg" media="max-width: 767px">
+          <img src="img/fluent/Fluent_LEARNINGS4.jpg" alt="My Image">
+        </picture>
 
-          <h4>Thank you for scrolling!</h4>
+        <h4>Thank you for scrolling!</h4>
 
       </div>
     </div>
@@ -228,9 +234,9 @@
 
   <footer id="contact">
     <div>
-      <h2>Let's Connect!</h2>
+      <h3>Let's Connect!</h3>
       <div>
-        <a href="mailto:deannmanncreative@gmail.com">Email</a>
+        <a href="mailto:deannmanncreative@gmail.com" class="button contact">Email</a>
       </div>
     </div>
     <div>
