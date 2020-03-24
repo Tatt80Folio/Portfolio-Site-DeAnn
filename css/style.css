@@ -1,3 +1,15 @@
+/*
+Colors used:
+Primary Color (Navy): #305372;
+Secondary Color (Sea): #B0DDE4;
+Primary Highlight Color (Tomato): #DF4C73;
+Secondary Highlight Color (Sky): #E2F0F9;
+Tertiary Highlight Color (Dark Tomato): #994c30;
+*/
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Open Sans', sans-serif;
@@ -14,7 +26,6 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.25em;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 h2 {
@@ -32,17 +43,15 @@ h4 {
   font-weight: 600;
 }
 
+h5 {
+  font-size: 1.0em;
+  font-weight: 400;
+}
+
 img {
   width: 100%;
 }
 
-/*
-Colors used:
-Primary Color (Navy): #305372;
-Secondary Color (Sea): #B0DDE4;
-Primary Highlight Color (Tomato): #DF4C73;
-Secondary Highlight Color (Sky): #E2F0F9;
-*/
 a {
   color: #305372;
   text-decoration: none;
@@ -91,4 +100,78 @@ a:active {
 .button.contact:hover {
   background-color: #DF4C73;
   color: #ffffff !important;
+}
+
+/* Layout Styling */
+
+main {
+  padding-top: 125px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#hero {
+  background-color: #E2F0F9;
+  margin: 0;
+  padding: 15px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+header {
+  background-color: #E2F0F9;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 2px 2px 2px 2px rgba(12, 12, 12, 0.2);
+  position: fixed;
+  width: 100%;
+}
+
+/* Nav Bar Styling */
+
+  nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #305372;
+}
+
+nav > ul > li > a:hover {
+  color: #DF4C73;
+}
+
+nav > ul > li > a:active {
+  /* selected link */
+  color: #994c30;
 }
