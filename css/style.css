@@ -20,7 +20,7 @@ body {
   font-family: 'mr-eaves-xl-modern', sans-serif;
   font-size: 18px;
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 1.2;
   color: #000000;
 }
 
@@ -89,10 +89,14 @@ a:active {
   background-color: #305372;
   color: #ffffff;
   font-weight: 300;
-  padding: 12px;
+  text-decoration: none;
+  padding: 10px;
   border: 2px solid #305372;
   border-radius: 24px;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  font-size: 16px;
+  line-height: normal;
 }
 
 .button:visited {
@@ -103,6 +107,7 @@ a:active {
 .button:hover {
   background-color: transparent;
   color: #305372;
+  opacity: 0.8;
 }
 
 .button.contact {
@@ -132,6 +137,10 @@ main {
   /* 25px top and bottom, 0 left and right */
 }
 
+#work h1 {
+  text-align: center;
+}
+
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
@@ -146,16 +155,28 @@ main {
   width: 100%;
 }
 
-#hero h2 {
+#hero span {
+  display: block;
+}
+
+#work h3 {
+  text-align: left;
+}
+
+#about h2, h3 {
   text-align: center;
 }
 
 #logo {
-  height: 85px;
+  height: auto;
+  width: 210px;
+}
+
+#contact {
+  text-align: center;
 }
 
 /* Nav Bar Styling */
-
 .nav {
   display: inline-block;
   width: 100%;
@@ -191,6 +212,89 @@ nav>ul>li>a:active {
   color: #0C94B3;
 }
 
+.daisy {
+  width: 100%;
+  max-width 100%;
+  height: auto;
+}
+
+  .petal {
+    fill: #F0524F;
+  }
+
+  .petal-alt {
+    fill: #D93D82;
+  }
+
+  .center {
+    fill: #AE76FF;
+  }
+
+.petal {
+  animation: 4s color-change-petal infinite alternate linear;
+}
+
+.petal-alt {
+  animation: 4s color-change-alt infinite alternate linear;
+}
+
+.center {
+  animation: 8s color-change-center infinite alternate linear;
+}
+
+@keyframes color-change-petal {
+  0% {
+    fill: #F0524F;
+  }
+
+  50% {
+    fill: #D93D82;
+  }
+
+  100% {
+    fill: #F845EE;
+  }
+}
+
+@keyframes color-change-alt {
+    0% {
+      fill: #D93D82;
+    }
+
+    50% {
+      fill: #F037E6;
+    }
+
+    100% {
+      fill: #BA35E6;
+    }
+}
+
+@keyframes color-change-center {
+    0% {
+      fill: #AE76FF;
+    }
+
+    50% {
+      fill: #5F66E8;
+    }
+
+    100% {
+      fill: #61B1FF;
+    }
+}
+
+.flower {
+  animation: 10s spin infinite linear;
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform:rotate(359deg);}
+}
+
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -198,19 +302,70 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
+    height: 105px;
   }
 
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 25px;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  #logo {
+    padding-left: 5px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  body {
+    font-size: 20px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
   }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+}
 
 /* ==============================
 X-large devices (1440px or larger)

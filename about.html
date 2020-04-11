@@ -2,7 +2,6 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <!-- Place your kit's code here -->
   <script src="https://kit.fontawesome.com/f6954c1a79.js" crossorigin="anonymous"></script>
   <meta charset="utf-8" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -13,10 +12,10 @@
   <title>About DeAnn</title>
 </head>
 
-<body>
+<body id="about-page">
   <header>
     <div class="container">
-      <img id="portfolio-logo" src="img/DM-logo-vert.svg" alt="DeAnn Mann">
+      <img id="logo" src="img/DM-logo-vert.svg" alt="DeAnn Mann">
       <nav>
         <ul class="navigation">
           <li><a href="index.html">Work</a></li>
@@ -28,7 +27,7 @@
   </header>
 
   <main>
-    <div>
+    <div id="about">
       <!-- whole section block -->
       <div class="container">
         <!-- container/wrapper -->
@@ -39,39 +38,36 @@
           <img src="img/about/Headshot@1x.jpg" alt="My Image">
         </picture>
         <div>
-          <!-- open row that holds (2) columns for project -->
-          <div>
-            <!-- open column 1 -->
-            <h3>Who I am</h3>
-            <p>I’m creative. I love gathering inspiration and generating ideas. I thrive in conveying complex ideas through clean, simple imagery.</p>
-            <p>I’m investigative. I ask a lot of questions. I spot patterns, find themes and make connections.</p>
-            <p>I’m analytical. I enjoy examining and evaluating data that leads to sound decisions and innovative problem solving.</p>
-            <p>Nothing brings me more joy than creating solutions that change people’s lives. Immersing myself in finding those solutions comes in a close second.</p>
-            <p>In my everyday life, I strive to lead a healthy lifestyle. I practice yoga, meditation, latin ballroom dancing and cycling. Doting on my cats and discussing life with my husband daily keeps me grounded and balanced.</p>
-            <picture>
-              <source srcset="img/about/Yoga@2x.jpg" media="(max-width: 767px)">
-              <img src="img/about/Yoga@1x.jpg" alt="My Image">
-            </picture>
-            <picture>
-              <source srcset="img/about/Dance@2x.jpg" media="(max-width: 767px)">
-              <img src="img/about/Dance@1x.jpg" alt="My Image">
-            </picture>
-            <picture>
-              <source srcset="img/about/Cycle@2x.jpg" mmedia="(max-width: 767px)">
-              <img src="img/about/Cycle@1x.jpg" alt="My Image">
-            </picture>
-            <picture>
-              <source srcset="img/about/Kitty@2x.jpg" media="(max-width: 767px)">
-              <img src="img/about/Kitty@1x.jpg" alt="My Image">
-            </picture>
-            <a href="files/DeAnn_Mann_UX_Designer.pdf" class="button" target="_blank">View Resume</a>
-          </div> <!-- end column 1 -->
+          <h3>Who I am</h3>
+          <p>I’m creative. I love gathering inspiration and generating ideas. I thrive in conveying complex ideas through clean, simple imagery.</p>
+          <p>I’m investigative. I ask a lot of questions. I spot patterns, find themes and make connections.</p>
+          <p>I’m analytical. I enjoy examining and evaluating data that leads to sound decisions and innovative problem solving.</p>
+          <p>Nothing brings me more joy than creating solutions that change people’s lives. Immersing myself in finding those solutions comes in a close second.</p>
+          <p>In my everyday life, I strive to lead a healthy lifestyle. I practice yoga, meditation, latin ballroom dancing and cycling. Doting on my cats and discussing life with my husband daily keeps me grounded and balanced.</p>
+          <picture>
+            <source srcset="img/about/Yoga@2x.jpg" media="(max-width: 767px)">
+            <img src="img/about/Yoga@1x.jpg" alt="My Image">
+          </picture>
+          <picture>
+            <source srcset="img/about/Dance@2x.jpg" media="(max-width: 767px)">
+            <img src="img/about/Dance@1x.jpg" alt="My Image">
+          </picture>
+          <picture>
+            <source srcset="img/about/Cycle@2x.jpg" mmedia="(max-width: 767px)">
+            <img src="img/about/Cycle@1x.jpg" alt="My Image">
+          </picture>
+          <picture>
+            <source srcset="img/about/Kitty@2x.jpg" media="(max-width: 767px)">
+            <img src="img/about/Kitty@1x.jpg" alt="My Image">
+          </picture>
+          <a href="files/DeAnn_Mann_UX_Designer.pdf" class="button" target="_blank">View Resume</a>
 
-          <div>
+
+          <div class="row">
             <!-- open column 2 -->
             <h3>Skills and Tools</h3>
 
-            <div>
+            <div class="col-md-6">
               <!-- open Skills section -->
               <h4>UX/UI Key Skills</h4>
               <ul>
@@ -90,7 +86,7 @@
               </ul>
             </div>
             <!-- end Skills section -->
-            <div>
+            <div class="col-md-6">
               <!-- open Tools section -->
               <h4>Programs</h4>
               <ul>
