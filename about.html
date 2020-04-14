@@ -15,11 +15,13 @@
 <body id="about-page">
   <header>
     <div class="container">
-      <img id="logo" src="img/DM-logo-vert.svg" alt="DeAnn Mann">
+      <a href="index.html">
+        <img id="logo" src="img/DM-logo-vert.svg" alt="DeAnn Mann">
+      </a>
       <nav>
         <ul class="navigation">
           <li><a href="index.html">Work</a></li>
-          <li><a href="about.html" target="_blank">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -32,7 +34,8 @@
       <div class="container">
         <!-- container/wrapper -->
         <h2>About Me</h2>
-        <p>As a designer with 10+ years in art direction, I meet business needs while creating compelling user experiences.</p>
+        <p class="center-text">
+          As a designer with 10+ years in art direction, I meet business needs while creating compelling user experiences.</p>
         <picture>
           <source srcset="img/about/Headshot@2x.jpg" media="(max-width: 767px)">
           <img src="img/about/Headshot@1x.jpg" alt="My Image">
@@ -53,15 +56,16 @@
             <img src="img/about/Dance@1x.jpg" alt="My Image">
           </picture>
           <picture>
-            <source srcset="img/about/Cycle@2x.jpg" mmedia="(max-width: 767px)">
+            <source srcset="img/about/Cycle@2x.jpg" media="(max-width: 767px)">
             <img src="img/about/Cycle@1x.jpg" alt="My Image">
           </picture>
           <picture>
             <source srcset="img/about/Kitty@2x.jpg" media="(max-width: 767px)">
             <img src="img/about/Kitty@1x.jpg" alt="My Image">
           </picture>
-          <a href="files/DeAnn_Mann_UX_Designer.pdf" class="button" target="_blank">View Resume</a>
-
+          <div class="center-text">
+            <a href="files/DeAnn_Mann_UX_Designer.pdf" class="button" target="_blank">View Resume</a>
+          </div>
 
           <div class="row">
             <!-- open column 2 -->
@@ -114,7 +118,7 @@
         <a href="mailto:deannmanncreative@gmail.com" class="button contact">Email</a>
       </div>
     </div>
-    <div>
+    <div class="social-links">
       <ul>
         <li><a href="https://www.linkedin.com/in/deannmanncreative" target="_blank"></a> <i class="fab fa-linkedin"></i></li>
         <li><a href="https://twitter.com/DeAnn22295567" target="_blank"></a> <i class="fab fa-twitter-square"></i></li>
@@ -124,7 +128,7 @@
     <p>Copyright DeAnn Mann Creative 2020</p>
 
   </footer>
-
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

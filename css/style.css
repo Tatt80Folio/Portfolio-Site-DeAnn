@@ -6,6 +6,7 @@ Primary Highlight Color (Tomato): #DF4C73;
 Secondary Highlight Color (Sky): #E2F0F9;
 Tertiary Highlight Color (Deep Tomato): #8E3232;
 */
+
 img {
   width: 100%;
   height: auto;
@@ -13,6 +14,10 @@ img {
 
 * {
   box-sizing: border-box;
+}
+
+.center-text {
+  text-align: center;
 }
 
 body {
@@ -176,6 +181,11 @@ main {
   text-align: center;
 }
 
+#contact .social-links {
+  text-align: left;
+}
+
+
 /* Nav Bar Styling */
 .nav {
   display: inline-block;
@@ -208,27 +218,28 @@ nav>ul>li>a:hover {
 }
 
 nav>ul>li>a:active {
-  /* selected link */
   color: #0C94B3;
 }
 
-.daisy {
+#daisy {
   width: 100%;
   max-width 100%;
   height: auto;
+  margin: 10px;
+  padding: 60px;
 }
 
-  .petal {
-    fill: #F0524F;
-  }
+.petal {
+  fill: #F0524F;
+}
 
-  .petal-alt {
-    fill: #D93D82;
-  }
+.petal-alt {
+  fill: #D93D82;
+}
 
-  .center {
-    fill: #AE76FF;
-  }
+.center {
+  fill: #AE76FF;
+}
 
 .petal {
   animation: 4s color-change-petal infinite alternate linear;
@@ -257,31 +268,31 @@ nav>ul>li>a:active {
 }
 
 @keyframes color-change-alt {
-    0% {
-      fill: #D93D82;
-    }
+  0% {
+    fill: #D93D82;
+  }
 
-    50% {
-      fill: #F037E6;
-    }
+  50% {
+    fill: #F037E6;
+  }
 
-    100% {
-      fill: #BA35E6;
-    }
+  100% {
+    fill: #BA35E6;
+  }
 }
 
 @keyframes color-change-center {
-    0% {
-      fill: #AE76FF;
-    }
+  0% {
+    fill: #AE76FF;
+  }
 
-    50% {
-      fill: #5F66E8;
-    }
+  50% {
+    fill: #5F66E8;
+  }
 
-    100% {
-      fill: #61B1FF;
-    }
+  100% {
+    fill: #61B1FF;
+  }
 }
 
 .flower {
@@ -289,11 +300,14 @@ nav>ul>li>a:active {
 }
 
 @keyframes spin {
-    from {transform: rotate(0deg);}
-    to {transform:rotate(359deg);}
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
 }
-
-
 
 /* ==============================
 Medium devices (640px and larger)
