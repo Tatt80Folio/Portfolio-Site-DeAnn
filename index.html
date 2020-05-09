@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/f6954c1a79.js" crossorigin="anonymous"></script>
   <meta charset="utf-8" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -15,16 +16,17 @@
 <body>
   <header>
     <div class="container">
-      <a href="index.html">
-        <img id="logo" src="img/DM-logo-vert.svg" alt="DeAnn Mann">
-      </a>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <img id="logo" src="img/DM-logo-horiz.svg" alt="DeAnn Mann">
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -173,7 +175,7 @@
     <div class="container">
       <h3>Let's Connect!</h3>
       <div>
-        <a href="mailto:deannmanncreative@gmail.com" class="button contact">Email</a>
+        <a href="mailto:deannmanncreative@gmail.com" class="button contact" onclick="menuToggle()">Email</a>
       </div>
     </div>
     <div class="social-links">

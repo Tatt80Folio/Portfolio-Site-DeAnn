@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/f6954c1a79.js" crossorigin="anonymous"></script>
   <meta charset="utf-8" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -15,16 +16,17 @@
 <body>
   <header>
     <div class="container">
-      <a href="index.html">
-        <img id="logo" src="img/DM-logo-vert.svg" alt="DeAnn Mann">
-      </a>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <img id="logo" src="img/DM-logo-horiz.svg" alt="DeAnn Mann">
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -96,16 +98,18 @@
           <source srcset="img/fluent/Fluent_Janar_persona@0.5x.jpg" media="(max-width: 767px)">
           <img src="img/fluent/Fluent_Janar_persona@1200px.jpg" alt="My Image">
         </picture>
-        <p>Janar needs a way to expand his vocabulary in a foreign language because he is new to the country and cannot communicate effectively or credibly with the people in their native tongue.</p>
-        <!-- overlay copy on "Fluent Problem" background image -->
-        <picture>
-          <source srcset="img/fluent/Fluent_Problem_bkgrd@0.5x.jpg" media="(max-width: 767px)">
-          <img src="img/fluent/Fluent_Problem_bkgrd@1200px.jpg" alt="My Image">
-        </picture>
-        <picture>
-          <source srcset="img/fluent/Fluent_Janar_issues@0.5x.jpg" media="(max-width: 767px)">
-          <img src="img/fluent/Fluent_Janar_issues@1200px.jpg" alt="My Image">
-        </picture>
+        <div class="text-overlay">
+          <p class="centered">
+            Janar needs a way to expand his vocabulary in a foreign language
+            because he is new to the country and cannot communicate
+            effectively or credibly with the people in their native tongue.
+          </p>
+          <!-- overlay copy on "Fluent Problem" background image -->
+          <picture>
+            <source srcset="img/fluent/Fluent_Problem_bkgrd@0.5x.jpg" media="(max-width: 767px)" />
+            <img src="img/fluent/Fluent_Problem_bkgrd@1200px.jpg" alt="My Image" />
+          </picture>
+        </div>
 
         <h4>Problem Statement</h4>
         <p>Newcomers to a country need to expand their vocabulary in a foreign language because they cannot communicate effectively or credibly with the people in their native tongue.</p>
@@ -232,7 +236,7 @@
     <div class="container">
       <h3>Let's Connect!</h3>
       <div>
-        <a href="mailto:deannmanncreative@gmail.com" class="button contact">Email</a>
+        <a href="mailto:deannmanncreative@gmail.com" class="button contact" onclick="menuToggle()">Email</a>
       </div>
     </div>
     <div class="social-links">
