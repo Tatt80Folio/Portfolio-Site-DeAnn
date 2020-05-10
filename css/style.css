@@ -21,8 +21,8 @@ img {
 
 body {
   background-color: #ffffff;
-  font-family: 'mr-eaves-xl-modern', sans-serif;
-  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.2;
   color: #000000;
@@ -49,29 +49,30 @@ h4 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2em;
-  font-weight: 600;
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
 h3 {
-  font-size: 1.5em;
-  font-weight: 600;
+  font-size: 1.25em;
+  font-weight: 400;
 }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 300;
 }
 
 h5 {
-  font-size: 1em;
+  font-size: .75em;
   font-weight: 300;
 }
+
 
 a {
   color: #305372;
@@ -98,14 +99,14 @@ a:active {
   display: inline-block;
   background-color: #305372;
   color: #ffffff;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border: 2px solid #305372;
   border-radius: 24px;
   transition-duration: 0.2s;
   transition-property: opacity;
-  font-size: 16px;
+  font-size: 14px;
   line-height: normal;
 }
 
@@ -147,7 +148,7 @@ main {
   /* 25px top and bottom, 0 left and right */
 }
 
-#work h1 {
+#work h2 {
   text-align: center;
 }
 
@@ -180,8 +181,8 @@ h3 {
 
 #logo {
   height: auto;
-  max-width: 210px;
-  padding: 10px 0 10px;
+  max-width: 190px;
+  padding: 12px 0 12px;
 }
 
 #contact {
@@ -242,10 +243,10 @@ nav>ul>li>a:active {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
+  border-top: 1px solid rgba(12, 12, 12, 0.2);
 }
 
-.navtoggle.responsive li:last-child {
+.navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
 }
 
