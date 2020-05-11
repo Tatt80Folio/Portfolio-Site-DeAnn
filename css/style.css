@@ -237,17 +237,21 @@ nav>ul>li>a:active {
 }
 
 .navtoggle.responsive nav {
-  padding: 24px 0 0;
+  padding: 0;
+  background-color: #e2f0f9;
+  margin-top: 22px;
+  text-align: center;
 }
 
 .navtoggle.responsive li {
   display: block;
-  padding: 10px 0;
+  padding: 12px 0;
   border-top: 1px solid rgba(12, 12, 12, 0.2);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
+  border-top: none;
 }
 
 #daisy {
