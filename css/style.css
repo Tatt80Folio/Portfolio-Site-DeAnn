@@ -135,7 +135,7 @@ a:active {
 
 /* Layout Styling */
 main {
-  padding-top: 56px;
+  padding-top: 58px;
 }
 
 .container {
@@ -171,7 +171,7 @@ main {
 }
 
 #work h3 {
-  text-align: left;
+  text-align: center;
 }
 
 #about h2,
@@ -191,6 +191,7 @@ h3 {
 
 #contact .social-links {
   text-align: left;
+  list-style-type: none;
 }
 
 /* Nav Bar Styling */
@@ -220,6 +221,10 @@ nav>ul>li>a:active {
   color: #0c94b3;
 }
 
+.navigation {
+  height: auto;
+}
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -232,20 +237,27 @@ nav>ul>li>a:active {
   display: none;
 }
 
+.navtoggle.responsive li:not(:last-child) {
+  margin-left: -1em;
+  margin-right: -1em;
+  background-color: #e2f0f9;
+  box-shadow: 2px 2px 2px 2px rgba(12, 12, 12, 0.2);
+}
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
 
 .navtoggle.responsive nav {
   padding: 0;
-  background-color: #e2f0f9;
-  margin-top: 22px;
+  margin-top: 7px;
   text-align: center;
+  width: 100%;
 }
 
 .navtoggle.responsive li {
   display: block;
-  padding: 12px 0;
+  padding: 16px 0;
   border-top: 1px solid rgba(12, 12, 12, 0.2);
 }
 
