@@ -9,6 +9,8 @@ Tertiary Highlight Color (Deep Tomato): #8E3232;
 img {
   width: 100%;
   height: auto;
+  position: relative;
+  z-index: -2;
 }
 
 * {
@@ -24,8 +26,9 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.5;
   color: #000000;
+  margin-block-start: 0;
 }
 
 header {
@@ -41,38 +44,50 @@ header {
   z-index: 2;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  line-height: 1.2;
-}
-
 h1 {
   font-size: 1.5em;
   font-weight: 700;
+  margin-block-start: .125em;
+  margin-block-end: 0em;
 }
 
 h2 {
   font-size: 1.5em;
   font-weight: 400;
+  margin-block-end: .125em;
 }
 
 h3 {
   font-size: 1.25em;
-  font-weight: 400;
+  font-weight: 600;
+  margin-block-start: .125em;
+  margin-block-end: .125em;
 }
 
 h4 {
-  font-size: 1em;
-  font-weight: 300;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-block-start: 1.5em;
+  margin-block-end: .125em;
 }
 
 h5 {
+  font-size: 1em;
+  font-weight: 600;
+  margin-block-start: .75em;
+  margin-block-end: .125em;
+}
+
+h6 {
   font-size: .75em;
   font-weight: 300;
 }
 
+p {
+  font-size: 16px;
+  margin-block-start: .125em;
+  margin-block-end: .5em;
+}
 
 a {
   color: #305372;
@@ -101,12 +116,12 @@ a:active {
   color: #ffffff;
   font-weight: 400;
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   border: 2px solid #305372;
-  border-radius: 24px;
+  border-radius: 16px;
   transition-duration: 0.2s;
   transition-property: opacity;
-  font-size: 14px;
+  font-size: 12px;
   line-height: normal;
 }
 
@@ -124,8 +139,8 @@ a:active {
 .button.contact {
   background-color: transparent;
   color: #df4c73;
-  text-transform: uppercase;
-  border: 2px solid #df4c73;
+  border: 1px solid #df4c73;
+  margin-top: 6px;
 }
 
 .button.contact:hover {
@@ -144,16 +159,12 @@ main {
 }
 
 .row {
-  margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
-}
-
-#work h2 {
-  text-align: center;
+  margin: 1px 0 10px;
 }
 
 #work .row {
-  padding-bottom: 25px;
+  padding-bottom: 15px;
+  padding-top: 10px;
   border-bottom: 1px solid #4a4a4a;
 }
 
@@ -170,13 +181,19 @@ main {
   display: block;
 }
 
-#work h3 {
-  text-align: center;
+.list ol {
+  padding-left: 20px;
 }
 
-#about h2,
-h3 {
-  text-align: center;
+.list li {
+  padding-left: 5px;
+  margin-block-start: .125em;
+  margin-block-end: .125em;
+}
+
+.list ul {
+  padding-left: 20px;
+  margin-block-start: .125em;
 }
 
 #logo {
@@ -185,13 +202,18 @@ h3 {
   padding: 12px 0 12px;
 }
 
-#contact {
-  text-align: center;
+.social-links ul {
+  padding-inline-start: 0;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
-#contact .social-links {
-  text-align: left;
+.social-links li {
   list-style-type: none;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  padding-right: 8px;
 }
 
 /* Nav Bar Styling */
@@ -227,10 +249,11 @@ nav>ul>li>a:active {
 
 .navtoggle li .icon {
   position: absolute;
-  right: 0;
-  top: 12px;
+  right: 8px;
+  top: 6px;
   font-size: 24px;
   padding-right: 0;
+  padding-left: 0;
 }
 
 .navtoggle li:not(:last-child) {
@@ -250,20 +273,25 @@ nav>ul>li>a:active {
 
 .navtoggle.responsive nav {
   padding: 0;
-  margin-top: 7px;
+  margin-top: 5px;
   text-align: center;
   width: 100%;
 }
 
 .navtoggle.responsive li {
   display: block;
-  padding: 16px 0;
+  padding: 15px;
   border-top: 1px solid rgba(12, 12, 12, 0.2);
 }
 
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
   border-top: none;
+}
+
+.responsive {
+  float: left;
+  width: 100%;
 }
 
 #daisy {
@@ -274,6 +302,30 @@ nav>ul>li>a:active {
   padding: 60px;
 }
 
+.img-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+.img-column {
+  flex: 50%;
+  max-width: 50%;
+}
+}
+
+.flower {
+  position: relative;
+  z-index: -2;
+}
+
 .petal {
   fill: #f0524f;
 }
@@ -282,7 +334,7 @@ nav>ul>li>a:active {
   fill: #d93d82;
 }
 
-.center {
+.flower-center {
   fill: #ae76ff;
 }
 
@@ -294,7 +346,7 @@ nav>ul>li>a:active {
   animation: 4s color-change-alt infinite alternate linear;
 }
 
-.center {
+.flower-center {
   animation: 8s color-change-center infinite alternate linear;
 }
 
@@ -366,6 +418,27 @@ nav>ul>li>a:active {
   width: 100%;
 }
 
+[class*='col-'] {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.hero-photo-wrapper {
+  text-align: center;
+}
+
+.hero-photo-wrapper img {
+  width: 400px;
+  height: auto;
+}
+
 .profile-photo-wrapper {
   text-align: center;
 }
@@ -373,13 +446,15 @@ nav>ul>li>a:active {
 .profile-photo-wrapper img {
   width: 200px;
   height: auto;
+  margin-top: 52px;
 }
 
 /* Centered text */
 .centered {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
+  width: 90%;
   transform: translate(-50%, -50%);
 }
 
@@ -387,114 +462,134 @@ nav>ul>li>a:active {
   position: relative;
   text-align: center;
   color: white;
+  z-index: -1;
+  font-size: 1em;
 }
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-    height: 105px;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 25px;
-  }
-
-  nav>ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
-  }
-
-  nav>ul>li {
-    display: inline-block;
-  }
-
-  main {
-    padding-top: 99px;
-  }
-
-  #logo {
-    max-width: 250px;
-    padding: 15px 0 15px;
-    margin-left: 10px;
-  }
-
-  #hero span {
-    display: block;
-  }
-
-  body {
-    font-size: 20px;
-  }
-
-  .col-md-3 {
-    width: 25%;
-  }
-
-  .col-md-6 {
-    width: 50%;
-  }
-
-  .col-md-12 {
-    width: 100%;
-  }
-
-  [class*='col-'] {
-    float: left;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .row::after {
-    content: '';
-    clear: both;
-    display: table;
-  }
-
-  #about-page h3 {
-    margin-top: 0;
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
-  }
-}
-
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 641px) {
   .container {
-    max-width: 1200px;
+    max-width: 1023px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .col-lg-3 {
-    width: 25%;
-  }
+  @media only screen and (min-width: 640px) {
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+      height: 105px;
+    }
 
-  .col-lg-6 {
-    width: 50%;
-  }
+    @media only screen and (min-width: 640px) {
+      .responsive {
+        width: 100%;
+      }
+    }
 
-  .col-lg-12 {
-    width: 100%;
-  }
-}
+    /* Create four equal columns that sits next to each other */
+    @media screen and (min-width: 640px) {
+      .img-column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
 
-/* ==============================
+      .text-overlay {
+        font-size: 1.5em;
+      }
+
+      nav {
+        width: auto;
+        float: right;
+        margin-top: 25px;
+      }
+
+      nav>ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+      }
+
+      nav>ul>li {
+        display: inline-block;
+      }
+
+      main {
+        padding-top: 99px;
+      }
+
+      #logo {
+        max-width: 250px;
+        padding: 15px 0 15px;
+        margin-left: 10px;
+      }
+
+      #hero span {
+        display: block;
+      }
+
+      .col-md-3 {
+        width: 25%;
+      }
+
+      .col-md-6 {
+        width: 50%;
+      }
+
+      .col-md-12 {
+        width: 100%;
+      }
+
+      #about-page h3 {
+        margin-top: 0px;
+      }
+
+      .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+
+      .navtoggle li:last-child {
+        display: none;
+      }
+
+      .hero-photo-wrapper img {
+        width: 75%;
+        height: auto;
+      }
+    }
+
+    /* ==============================
+Large devices (1024px or larger)
+================================= */
+    @media only screen and (min-width: 1024px) {
+      .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .text-overlay {
+        font-size: 1.75em;
+      }
+
+      .col-lg-3 {
+        width: 25%;
+      }
+
+      .col-lg-6 {
+        width: 50%;
+      }
+
+      .col-lg-12 {
+        width: 100%;
+      }
+    }
+
+    /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+    @media only screen and (min-width: 1440px) {}

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="navbar">
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
         <img id="logo" src="img/DM-logo-horiz.svg" alt="DeAnn Mann">
@@ -35,36 +35,23 @@
       <!-- whole section block -->
       <div class="container">
         <!-- container/wrapper -->
-        <h2>About Me</h2>
+        <div class="profile-photo-wrapper">
+          <picture>
+            <source srcset="img/about/Headshot@2x.jpg" media="(max-width: 767px)">
+            <img src="img/about/Headshot@1x.jpg" alt="My Image">
+          </picture>
+        </div>
         <p class="center-text">
           As a designer with 10+ years in art direction, I meet business needs while creating compelling user experiences.</p>
-        <picture>
-          <source srcset="img/about/Headshot@2x.jpg" media="(max-width: 767px)">
-          <img src="img/about/Headshot@1x.jpg" alt="My Image">
-        </picture>
         <div>
           <h3>Who I am</h3>
           <p>I’m creative. I love gathering inspiration and generating ideas. I thrive in conveying complex ideas through clean, simple imagery.</p>
           <p>I’m investigative. I ask a lot of questions. I spot patterns, find themes and make connections.</p>
           <p>I’m analytical. I enjoy examining and evaluating data that leads to sound decisions and innovative problem solving.</p>
-          <p>Nothing brings me more joy than creating solutions that change people’s lives. Immersing myself in finding those solutions comes in a close second.</p>
+          <p>Nothing makes me happier than creating solutions that change people’s lives. Immersing myself in finding those solutions comes in a close second.</p>
           <p>In my everyday life, I strive to lead a healthy lifestyle. I practice yoga, meditation, latin ballroom dancing and cycling. Doting on my cats and discussing life with my husband daily keeps me grounded and balanced.</p>
-          <picture>
-            <source srcset="img/about/Yoga@2x.jpg" media="(max-width: 767px)">
-            <img src="img/about/Yoga@1x.jpg" alt="My Image">
-          </picture>
-          <picture>
-            <source srcset="img/about/Dance@2x.jpg" media="(max-width: 767px)">
-            <img src="img/about/Dance@1x.jpg" alt="My Image">
-          </picture>
-          <picture>
-            <source srcset="img/about/Cycle@2x.jpg" media="(max-width: 767px)">
-            <img src="img/about/Cycle@1x.jpg" alt="My Image">
-          </picture>
-          <picture>
-            <source srcset="img/about/Kitty@2x.jpg" media="(max-width: 767px)">
-            <img src="img/about/Kitty@1x.jpg" alt="My Image">
-          </picture>
+
+
           <div class="center-text">
             <a href="files/DeAnn_Mann_UX_Designer.pdf" class="button" target="_blank">View Resume</a>
           </div>
@@ -72,7 +59,6 @@
           <div class="row">
             <!-- open column 2 -->
             <h3>Skills and Tools</h3>
-
             <div class="col-md-6">
               <!-- open Skills section -->
               <h4>UX/UI Key Skills</h4>
@@ -117,19 +103,18 @@
     <div class="container">
       <h3>Let's Connect!</h3>
       <div>
-        <a href="mailto:deannmanncreative@gmail.com" class="button contact" onclick="menuToggle()">Email</a>
+        <a href="mailto:deannmanncreative@gmail.com" class="button contact" onclick="menuToggle()">Email Me</a>
       </div>
+      <div class="social-links">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/deannmanncreative" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://twitter.com/DeAnn22295567" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+        </ul>
+      </div>
+      <h6>Copyright DeAnn Mann Creative 2020</h6>
     </div>
-    <div class="social-links">
-      <ul>
-        <li><a href="https://www.linkedin.com/in/deannmanncreative" target="_blank"></a> <i class="fab fa-linkedin"></i></li>
-        <li><a href="https://twitter.com/DeAnn22295567" target="_blank"></a> <i class="fab fa-twitter-square"></i></li>
-      </ul>
-    </div>
-
-    <h5>Copyright DeAnn Mann Creative 2020</h5>
-
   </footer>
+
   <script src="js/scripts.js"></script>
 </body>
 
