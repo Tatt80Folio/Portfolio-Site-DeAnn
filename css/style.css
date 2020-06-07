@@ -44,10 +44,10 @@ header {
 }
 
 .line-break {
-  background: grey;
-  height: 2px;
+  background: #4a4a4a;
+  height: 1px;
   width: 100%;
-  padding: 1px;
+  margin-top: 30px;
 }
 
 h1,
@@ -160,6 +160,7 @@ nav > ul > li > a:active {
   text-decoration: none;
   display: inline-block;
   padding-right: 10px;
+  margin: 0;
 }
 
 .navtoggle li:not(:last-child) {
@@ -231,16 +232,9 @@ nav > ul > li > a:active {
   opacity: 0.8;
 }
 
-.button.contact {
-  background-color: transparent;
-  color: #8e3232;
-  border: 1px solid #8e3232;
-  margin-top: 6px;
-}
-
-.button.contact:hover {
-  background-color: #8e3232;
-  color: #fff;
+.social {
+  max-width: 40px;
+  height: auto;
 }
 
 /* Layout Styling */
@@ -284,7 +278,13 @@ main {
 }
 
 #lets-connect {
+  margin-top: 30px;
   text-align: center;
+}
+
+.contact > ul {
+  margin: 0;
+  padding: 0;
 }
 
 .responsive {
@@ -298,11 +298,13 @@ main {
 }
 
 #daisy {
-  width: 100%;
-  max-width: 100%;
+  width: 80%;
   height: auto;
-  margin: 10px;
-  padding: 20px;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+  z-index: -2;
+  animation: 10s spin infinite linear;
 }
 
 .img-row {
@@ -324,9 +326,11 @@ main {
 }
 
 .flower {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
   position: relative;
-  z-index: -2;
-  animation: 10s spin infinite linear;
 }
 
 .petal {
