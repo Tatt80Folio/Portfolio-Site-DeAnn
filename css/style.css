@@ -429,7 +429,8 @@ main {
 }
 
 .hero-photo-wrapper img {
-  width: 400px;
+  padding-right: 10px;
+  width: 300px;
   height: auto;
 }
 
