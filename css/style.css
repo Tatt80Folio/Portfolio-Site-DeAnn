@@ -1,10 +1,10 @@
 /*
 Colors used:
-Primary Color (Navy): #305372;
-Secondary Color (Sea): #B0DDE4;
-Primary Highlight Color (Tomato): #DF4C73;
-Secondary Highlight Color (Sky): #E2F0F9;
-Tertiary Highlight Color (Deep Tomato): #8E3232;
+Primary Color (Blue): #0266a2;
+Secondary Color (Light Blue): #c2eef3;
+Hero Highlight Color (Light Green): #e2f4a2;
+Link Hover Color (Red): #c5234e;
+Link Visited Color (Dark Red): #8e3232;
 */
 
 img {
@@ -54,43 +54,50 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
   line-height: 1.2em;
 }
 
 h1 {
   font-size: 2.25em;
   font-weight: 700;
+  margin: 30px 0 5px 0;
 }
 
 h2 {
-  font-size: 1.75em;
-  font-weight: 600;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 40px 0 5px 0;
 }
 
 h3 {
   font-size: 1.25em;
-  font-weight: 600;
+  font-weight: 400;
+  margin: 20px 0 2px 0;
 }
 
 h4 {
   font-size: 1.2em;
   font-weight: 400;
+  margin: 20px 0 5px 0;
 }
 
 h5 {
   font-size: 1em;
   font-weight: 600;
+  margin: 20px 0 2px 0;
 }
 
 h6 {
   font-size: 0.75em;
   font-weight: 300;
+  line-height: 1.2em;
+  margin: 10px 0 15px 0;
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
+  margin: 10px 0 2px 0;
 }
 
 nav > ul {
@@ -218,7 +225,8 @@ nav > ul > li > a:active {
   transition-duration: 0.2s;
   transition-property: opacity;
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 1em;
+  margin: 8px 0 2px 0;
 }
 
 .button:visited {
@@ -235,6 +243,7 @@ nav > ul > li > a:active {
 .social {
   max-width: 40px;
   height: auto;
+  margin-top: 10px;
 }
 
 /* Layout Styling */
@@ -278,7 +287,7 @@ main {
 }
 
 #lets-connect {
-  margin-top: 30px;
+  margin: 30px 0 10px 0;
   text-align: center;
 }
 
@@ -445,7 +454,7 @@ main {
 }
 
 /* Centered text */
-.centered {
+.overlay-style {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -467,7 +476,7 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 641px) {
   .container {
-    max-width: 1023px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -524,8 +533,16 @@ Medium devices (640px and larger)
     width: 25%;
   }
 
+  .col-md-40p {
+    width: 40%;
+  }
+
   .col-md-6 {
     width: 50%;
+  }
+
+  .col-md-60p {
+    width: 60%;
   }
 
   .col-md-12 {
@@ -555,7 +572,7 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   .container {
-    max-width: 1200px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
   }
